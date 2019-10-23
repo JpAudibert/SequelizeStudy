@@ -17,6 +17,16 @@ module.exports = {
         references: { model: "techs", key: "id" },
         onDelete: "CASCADE",
         onUpdate: "CASCADE"
+      },
+
+      created_at: {
+        type: Sequelize.DATE,
+        allowNull: false
+      },
+
+      updated_at: {
+        type: Sequelize.DATE,
+        allowNull: false
       }
     });
   },
